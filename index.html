@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Search App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center min-h-screen">
+
+    <div class="container max-w-3xl w-full bg-white p-8 rounded-lg shadow-lg text-center">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">TV Show Search</h1>
+
+        <form id="searchForm" class="flex gap-2 mb-6 sticky top-0 bg-white py-4 rounded-lg">
+            <input name="searchBar" type="text" placeholder="TV Show Title"
+                class="w-full p-3 border border-gray-300 rounded-lg ">
+            <button
+                class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                Search
+            </button>
+        </form>
+
+        <div id="imgDiv" class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
